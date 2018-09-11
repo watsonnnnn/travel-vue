@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const nib = require('nib');
 
 module.exports = {
   entry: {
@@ -20,9 +21,11 @@ module.exports = {
     }, {
       test: /\.styl$/,
       use: [
-        'style-loader',
+        'vue-style-loader',
         'css-loader',
-        'stylus-loader',
+        {
+          loader: 'stylus-loader',
+        },
       ],
     }, {
       test: /\.vue$/,
@@ -47,6 +50,17 @@ module.exports = {
     },
     ],
   },
+  plugins: [
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        test: /\.styl$/,
+        stylus: {
+          use: [nib()],
+          import: [path.join(__dirname, './src/assets/styles/global.styl')],
+        },
+      },
+    }),
+  ],
   resolve: {
     alias: {
       vue$: 'vue/dist/vue.esm.js',

@@ -1,9 +1,9 @@
 <template>
   <div class="wrapper">
     <header>
-      <div>
-        123123
-        <img src="" alt="">
+      <div class="">
+        <!-- <a class="iconfont left">&#xe61c;</a> -->
+        <a class="left">123</a>
       </div>
       <div>
         <span></span>
@@ -39,4 +39,12 @@ export default {
   header
     background-color $header-color
     height pxtorem(44)
+    line-height pxtorem(44)
+    clear both
+    div
+      display inline-block
+    .left
+      color #fff
+      padding pxtorem(10)
+      height pxtorem(44)
 </style>

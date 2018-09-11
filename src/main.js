@@ -9,7 +9,7 @@ new Vue({
 });
 
 const loadFunc = () => {
-  const { clientWth } = document.documentElement;
+  const { clientWidth: clientWth } = document.documentElement;
   const clw = clientWth < 780 ? clientWth : 780;
   document.documentElement.style.fontSize = `${clw / 10}px`;
 };
