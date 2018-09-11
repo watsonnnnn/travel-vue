@@ -1,7 +1,5 @@
-$ue-height=320
+$ue-height=375
 
-body
-  color red
 @media screen and (min-width 320px)
   body
     font-size 16px
@@ -15,5 +13,21 @@ body
     font-size 20px
 
 pxtorem($px)
-  $px/$ue-height*10 + 'rem'
+  $px/$ue-height*10rem
   
+@font-face {
+  font-family: 'iconfont';  /* project id 831909 */
+  src: url('//at.alicdn.com/t/font_831909_de3vn5hlqm.eot');
+  src: url('//at.alicdn.com/t/font_831909_de3vn5hlqm.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_831909_de3vn5hlqm.woff') format('woff'),
+  url('//at.alicdn.com/t/font_831909_de3vn5hlqm.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_831909_de3vn5hlqm.svg#iconfont') format('svg');
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
