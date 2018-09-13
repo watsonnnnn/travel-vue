@@ -1,9 +1,8 @@
 <template>
   <div class="wrapper">
     <header>
-      <div class="">
-        <!-- <a class="iconfont left">&#xe61c;</a> -->
-        <a class="left">123</a>
+      <div class="left">
+        <a class="iconfont">&#xe61c;</a>
       </div>
       <div>
         <span></span>
@@ -41,10 +40,12 @@ export default {
     height pxtorem(44)
     line-height pxtorem(44)
     clear both
-    div
+    color #fff
+    display flex
+    >div
       display inline-block
     .left
-      color #fff
-      padding pxtorem(10)
-      height pxtorem(44)
+      height 100%
+      padding-left .22rem
+      padding-right .22rem
 </style>
