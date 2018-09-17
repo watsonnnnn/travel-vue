@@ -1,11 +1,11 @@
 import Vue from 'vue';
-import App from './App.vue';
+import home from './pages/home/Home.vue';
 import 'normalize.css';
 import 'styles/global.styl';
 
 new Vue({
   el: '#app',
-  render: h => h(App),
+  render: h => h(home),
 });
 
 const loadFunc = () => {
