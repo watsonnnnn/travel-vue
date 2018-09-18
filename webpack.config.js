@@ -22,7 +22,15 @@ module.exports = {
       test: /\.styl$/,
       use: [
         'vue-style-loader',
-        'css-loader',
+        {
+          loader: 'css-loader',
+          options: {
+            importLoaders: 2,
+          },
+        },
+        {
+          loader: 'postcss-loader',
+        },
         {
           loader: 'stylus-loader',
         },
