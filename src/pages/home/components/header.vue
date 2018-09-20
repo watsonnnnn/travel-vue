@@ -55,11 +55,13 @@ header
     padding-left pxtorem(10)
     .iconfont
       font-size 16px
+      vertical-align middle
   .right
     float right
     padding-right pxtorem(13)
     padding-left pxtorem(11)
     .iconfont
       margin-left pxtorem(-4)
+      font-size 14px
 
 </style>
