@@ -9,7 +9,6 @@ module.exports = ({
       'postcss-import': {},
       'postcss-preset-env': {},
       cssnano: {},
-      autoprefixer: {},
     },
   };
 };
