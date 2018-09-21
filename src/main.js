@@ -4,6 +4,7 @@ import home from './pages/home/Home.vue';
 import 'normalize.css';
 import 'swiper/dist/css/swiper.css';
 import 'styles/global.styl';
+// import 'styles/cssvariable.css';
 
 Vue.use(VueAwesomeSwiper);
 
