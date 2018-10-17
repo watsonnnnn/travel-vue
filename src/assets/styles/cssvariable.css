@@ -1,0 +1,8 @@
+:root {
+  --mainColor: red;
+}
+
+body{
+  color: var(--mainColor);
+  box-sizing: border-box
+}
